@@ -3,7 +3,8 @@
 
 #include <QWidget>
 #include <QProcess>
-#include <QTextEdit>
+
+#include "qbsprocces.h"
 
 namespace Ui {
 class Widget;
@@ -19,6 +20,9 @@ public:
 
 private:
     Ui::Widget *ui;
+    QbsProcces *mProcces;
+private slots:
+    void slotProccesCommamd(QString str);
 };
 
 #endif // WIDGET_H
