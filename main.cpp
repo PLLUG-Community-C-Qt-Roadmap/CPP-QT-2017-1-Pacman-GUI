@@ -1,11 +1,15 @@
 #include "mainwindow.h"
 #include <QApplication>
+#include "StartDialog.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+
+    StartDialog  startDialog;
+
+       startDialog.setMinimumSize(300, 50);
+       startDialog.show();
 
     return a.exec();
 }
